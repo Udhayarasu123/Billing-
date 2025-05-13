@@ -1,3 +1,4 @@
+from flask import Flask
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, simpledialog, scrolledtext
 from reportlab.lib.pagesizes import letter, A4
@@ -21,7 +22,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import qrcode
 import threading
-
+app = Flask(__name__) 
 class BillingSystem:
     invoice_count = 0
     CONFIG_FILE = "billing_config.json"
