@@ -3,3 +3,4 @@ gunicorn
 reportlab
 num2words
 pandas
+matplotlib
